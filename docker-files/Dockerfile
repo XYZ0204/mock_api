@@ -1,7 +1,10 @@
 FROM node:17-alpine3.14
 
+# Bundle app source
+COPY . /app
+
 # Create app directory
-WORKDIR /app
+#WORKDIR /app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -21,5 +24,3 @@ COPY . /app
 #EXPOSE 3000
 
 CMD [ "node", "src/index.js" ]
-
-
