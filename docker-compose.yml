@@ -4,7 +4,7 @@ services:
     container_name: ${CONTAINER_NAME}
     build:
       context: ./
-      dockerfile: ./Dockerfile
+      dockerfile: ./docker-files/Dockerfile
     tty: true
     #privileged: true
     volumes:
